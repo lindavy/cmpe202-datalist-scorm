@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header>
-        
-    </header>
+    <head>
+        <title>Class Quiz: Score Card</title>
+    </head>
     <body>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
+        <!-- *** BANNER *** -->
+        <nav class="navbar navbar-light bg-light">
+            <div class="text-center">
+                <a class="navbar-brand font-weight-bold" href="#">Score Card</a>
+            </div>
+        </nav>
+
+        <!-- *** OVERALL SUMMARY *** -->
+        <p>Questions Answered:</p>
+        <p>Questions Correct:</p>
+        <br><br>
+
+        <!-- *** SECTION SUMMARY *** -->
+        <div class="bd-example">
+
+            <details open="">
+                <summary>Advanced Algebra</summary>
+                <p> score details</p>
+            </details>
+            
+            <details open="">
+                <summary>English</summary>
+                <p> score details</p>
+            </details>
+            
+            <details open="">
+                <summary>Critical Thinking (Video)</summary>
+                <p> score details</p>
+            </details>
+        </div>
+
+        <!-- *** BUTTONS *** -->
+        <button type="button" class="btn btn-outline-primary">Exit</button>
     </body>
-    
 </html>

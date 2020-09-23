@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Class Quiz: Survey</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
+        <!-- *** BANNER *** -->
+        <nav class="navbar navbar-light bg-light">
+            <div class="text-center">
+                <a class="navbar-brand font-weight-bold" href="#">Survey</a>
+            </div>
+        </nav>
+
+        <!-- *** QUESTION *** -->
+        <p>How was your experience at the testing center?</p>
+
+        <!-- *** COMMENT BOX *** -->
+        <p>
+            <label for="commentarea">Comments</label>
+            <textarea id="commentarea" rows="3"></textarea>
+        </p>
+        <br>
+
+        <!-- *** SELECT MENU *** -->
+        <p>Select your test center.</p>
+        <select class="custom-select">
+            <option selected>City</option>
+            <option value="1">Milpitas</option>
+            <option value="2">San Jose</option>
+            <option value="3">Fremont</option>
+            <option value="4">Palo Alto</option>
+            <option value="5">Sunnyvale</option>
+            <option value="6">Redwood City</option>
+          </select>
+          <br>
+          <br>
+          <select class="custom-select">
+            <option selected>Room Number</option>
+            <option value="1">Room 41A</option>
+            <option value="2">Room 41B</option>
+            <option value="3">Room 41C</option>
+            <option value="3">Room 42A</option>
+            <option value="3">Room 42B</option>
+            <option value="3">Room 42C</option>
+          </select>
+
+        <br><br>
+          <!-- *** BUTTONS *** -->
+          <button type="button" class="btn btn-outline-info">Submit Survey</button>
+          <button type="button" class="btn btn-outline-dark">Skip Survey</button>
+    </body>

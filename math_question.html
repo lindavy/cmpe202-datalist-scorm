@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Math Questions</title>
+        <title>Class Quiz: Math</title>
     </head>
     <body>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="math-question.css">
+        
+        <!-- *** BANNER *** -->
         <nav class="navbar navbar-light bg-light">
             <div class="text-center">
                 <a class="navbar-brand font-weight-bold" href="#">Question 1</a>
             </div>
         </nav>
-        <div id="math-question-container">
-            <p>Given points (x1, y1) and (x2, y2), select the formula to find the equation of the given line.</p>            
+
+        <!-- *** QUESTION *** -->
+        <p>Given points (x1, y1) and (x2, y2), select the formula to find the equation of the given line.</p>            
+        
+        <!-- *** FIRST OPTION ROW *** -->
+        <div class="form-row">
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="options" id="option1" value="option1">
                 <label class="form-check-label" for="option1">
@@ -65,6 +71,10 @@
                     </math>
                 </label>
             </div>
+        </div>
+
+        <!-- *** SECOND OPTION ROW *** -->
+        <div class="form-row">
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="options" id="option3" value="option3">
                 <label class="form-check-label" for="option3">
@@ -146,6 +156,14 @@
                 </label>
             </div>
         </div>
+    
+        <!-- *** IMAGE *** -->
+        <img src="pointslope.png" alt="Point Slope Graph">
+        <br>
+        <br>
+        
+        <!-- *** BUTTONS *** -->
+        <button type="button" class="btn btn-outline-primary">Submit & Next Question</button>
+        <button type="button" class="btn btn-outline-danger">Cancel & Clear Selection</button>
     </body>
-
 </html>
