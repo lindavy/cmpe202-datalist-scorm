@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Class Quiz: Cosine</title>
+        <script src="calculateScore.js"></script>
     </head>
     <body>
         <!-- *** STYLESHEETS *** -->
@@ -15,7 +17,7 @@
         </nav>
 
         <!-- *** QUESTION *** -->
-        <div class="form-row mx-auto p-3" style="width:400px;"
+        <div class="form-row mx-auto p-3" style="width:730px;"
             <p>Select the cosine theorem formula.</p>
         </div>
 
@@ -171,9 +173,42 @@
     </div>
 
     <!-- *** BUTTONS *** -->
-    <div class="form-row mx-auto p-3" style="width:450px;">
-        <a href="english_sco.html" class="btn btn-outline-primary mx-3 p-2">Next Question</a>
-        <a href="math_question.html" class="btn btn-outline-danger mx-3 p-2">Previous Question</a>
+    <div class="form-row m-auto p-3"" style="width:450px;"">
+        <a href="english_sco.html" class="btn btn-outline-primary mr-1">Next Question</a>
+        <a href="math_question.html" class="btn btn-outline-danger">Previous Question</a>
     </div>
+
+    <script>
+        let answer = null;
+        viewScore();
+        function markQuestion()
+        {
+            if (document.getElementById('option1').checked)
+            {
+                console.log('option1 checked');
+                answer = 'option1';
+            }
+            else if (document.getElementById('option2').checked)
+            {
+                console.log('option2 checked');
+                answer = 'option2'; 
+            }
+            else if (document.getElementById('option3').checked)
+            {
+                console.log('option3 checked');
+                answer = 'option3';
+            }
+            else if (document.getElementById('option4').checked)
+            {
+                console.log('option4 checked');
+                answer = 'option4';
+            }
+            else
+            {
+                answer = ""; 
+            }
+            tallyScore(answer);
+        }
+    </script>
     </body>
 </html>
