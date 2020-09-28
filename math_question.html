@@ -9,161 +9,170 @@
         
         <!-- *** BANNER *** -->
         <nav class="navbar navbar-light bg-light">
-            <div class="text-center">
+            <div class="mx-auto" style="width: 200px;">
                 <a class="navbar-brand font-weight-bold" href="#">Question 1</a>
             </div>
         </nav>
 
-        <!-- *** QUESTION *** -->
-        <p>Given points (x1, y1) and (x2, y2), select the formula to find the equation of the given line.</p>            
-        
-        <!-- *** FIRST OPTION ROW *** -->
-        <div class="form-row">
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="options" id="option1" value="option1">
-                <label class="form-check-label" for="option1">
-                    <math>
-                        <mrow>
-                            <mi>y</mi>
-                            <mo>=</mo>
-                            <mi>m</mi>
-                            <mi>x</mi>
-                            <mo>+</mo>
-                            <mi>b</mi>
-                        </mrow>
-                    </math>
-                </label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="options" id="option2" value="option2">
-                <label class="form-check-label" for="option2">
-                    <math>
-                        <msup>
-                            <mrow>
-                                <mo>(</mo>
+        <div class="row mx-5 mt-4">
+            <div class="col my-3">
+                
+                <!-- *** QUESTION *** -->
+                <p>Given points (x1, y1) and (x2, y2), select the formula to find the equation of the given line.</p>            
+                
+                       
+                <!-- *** FIRST OPTION ROW *** -->
+                <div class="form-row m-2 p-2">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="options" id="option1" value="option1">
+                        <label class="form-check-label" for="option1">
+                            <math>
                                 <mrow>
+                                    <mi>y</mi>
+                                    <mo>=</mo>
+                                    <mi>m</mi>
                                     <mi>x</mi>
-                                    <mo>-</mo>
-                                    <mi>h</mi>
+                                    <mo>+</mo>
+                                    <mi>b</mi>
                                 </mrow>
-                                <mo>)</mo>
-                            </mrow>
-                            <mn>2</mn>
-                        </msup>
-                        <mo>+</mo>
-                        <msup>
-                            <mrow>
-                                <mo>(</mo>
+                            </math>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="options" id="option2" value="option2">
+                        <label class="form-check-label" for="option2">
+                            <math>
+                                <msup>
+                                    <mrow>
+                                        <mo>(</mo>
+                                        <mrow>
+                                            <mi>x</mi>
+                                            <mo>-</mo>
+                                            <mi>h</mi>
+                                        </mrow>
+                                        <mo>)</mo>
+                                    </mrow>
+                                    <mn>2</mn>
+                                </msup>
+                                <mo>+</mo>
+                                <msup>
+                                    <mrow>
+                                        <mo>(</mo>
+                                        <mrow>
+                                            <mi>y</mi>
+                                            <mo>-</mo>
+                                            <mi>k</mi>
+                                        </mrow>
+                                        <mo>)</mo>
+                                    </mrow>
+                                    <mn>2</mn>
+                                </msup>
+                                <mo>=</mo>
+                                <msup>
+                                    <mi>r</mi>
+                                    <mn>2</mn>
+                                </msup>
+                            </math>
+                        </label>
+                    </div>
+                </div>
+        
+                <!-- *** SECOND OPTION ROW *** -->
+                <div class="form-row m-2 p-2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="options" id="option3" value="option3">
+                        <label class="form-check-label" for="option3">
+                            <math>
                                 <mrow>
                                     <mi>y</mi>
                                     <mo>-</mo>
-                                    <mi>k</mi>
+                                    <msub>
+                                        <mi>y</mi>
+                                        <mn>1</mn>
+                                    </msub>
                                 </mrow>
-                                <mo>)</mo>
-                            </mrow>
-                            <mn>2</mn>
-                        </msup>
-                        <mo>=</mo>
-                        <msup>
-                            <mi>r</mi>
-                            <mn>2</mn>
-                        </msup>
-                    </math>
-                </label>
-            </div>
-        </div>
-
-        <!-- *** SECOND OPTION ROW *** -->
-        <div class="form-row">
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="options" id="option3" value="option3">
-                <label class="form-check-label" for="option3">
-                    <math>
-                        <mrow>
-                            <mi>y</mi>
-                            <mo>-</mo>
-                            <msub>
-                                <mi>y</mi>
-                                <mn>1</mn>
-                            </msub>
-                        </mrow>
-                        <mo>=</mo>
-                        <mrow>
-                            <mi>m</mi>
-                            <mo>(</mo>
+                                <mo>=</mo>
                                 <mrow>
+                                    <mi>m</mi>
+                                    <mo>(</mo>
+                                        <mrow>
+                                            <mi>x</mi>
+                                            <mo>-</mo>
+                                            <msub>
+                                                <mi>x</mi>
+                                                <mn>1</mn>
+                                            </msub>
+                                        </mrow>
+                                    <mo>)</mo>
+                                </mrow>
+                            </math>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="options" id="option4" value="option4">
+                        <label class="form-check-label" for="option4">
+                            <math>
+                                <mrow>
+                                    <mi>y</mi>
+                                    <mo>-</mo>
+                                    <msub>
+                                        <mi>y</mi>
+                                        <mn>2</mn>
+                                    </msub>
+                                </mrow>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <msub>
+                                            <mi>y</mi>
+                                            <mn>2</mn>
+                                        </msub>
+                                        <mo>-</mo>
+                                        <msub>
+                                            <mi>y</mi>
+                                            <mn>1</mn>
+                                        </msub>
+                                    </mrow>
+        
+                                    <mrow>
+                                        <msub>
+                                            <mi>x</mi>
+                                            <mn>2</mn>
+                                        </msub>
+                                        <mo>-</mo>
+                                        <msub>
+                                            <mi>x</mi>
+                                            <mn>1</mn>
+                                        </msub>
+                                    </mrow>
+                                </mfrac>
+                                <mrow>
+                                    <mo>(</mo>
                                     <mi>x</mi>
                                     <mo>-</mo>
                                     <msub>
                                         <mi>x</mi>
                                         <mn>1</mn>
                                     </msub>
+                                    <mo>)</mo>
                                 </mrow>
-                            <mo>)</mo>
-                        </mrow>
-                    </math>
-                </label>
+                            </math>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="row my-3">
+                    <!-- *** BUTTONS *** -->
+                    <a href="cosine.html" class="btn btn-outline-primary">Next Question</a>
+                </div>
             </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="options" id="option4" value="option4">
-                <label class="form-check-label" for="option4">
-                    <math>
-                        <mrow>
-                            <mi>y</mi>
-                            <mo>-</mo>
-                            <msub>
-                                <mi>y</mi>
-                                <mn>2</mn>
-                            </msub>
-                        </mrow>
-                        <mo>=</mo>
-                        <mfrac>
-                            <mrow>
-                                <msub>
-                                    <mi>y</mi>
-                                    <mn>2</mn>
-                                </msub>
-                                <mo>-</mo>
-                                <msub>
-                                    <mi>y</mi>
-                                    <mn>1</mn>
-                                </msub>
-                            </mrow>
+            
+            <!-- *** IMAGE *** -->
+            <div class="col px-md-5">
+                <img src="pointslope.png" alt="Point Slope Graph">
+            </div>
 
-                            <mrow>
-                                <msub>
-                                    <mi>x</mi>
-                                    <mn>2</mn>
-                                </msub>
-                                <mo>-</mo>
-                                <msub>
-                                    <mi>x</mi>
-                                    <mn>1</mn>
-                                </msub>
-                            </mrow>
-                        </mfrac>
-                        <mrow>
-                            <mo>(</mo>
-                            <mi>x</mi>
-                            <mo>-</mo>
-                            <msub>
-                                <mi>x</mi>
-                                <mn>1</mn>
-                            </msub>
-                            <mo>)</mo>
-                        </mrow>
-                    </math>
-                </label>
-            </div>
         </div>
-    
-        <!-- *** IMAGE *** -->
-        <img src="pointslope.png" alt="Point Slope Graph">
-        <br>
-        <br>
         
-        <!-- *** BUTTONS *** -->
-        <button type="button" class="btn btn-outline-primary">Submit & Next Question</button>
-        <button type="button" class="btn btn-outline-danger">Cancel & Clear Selection</button>
     </body>
 </html>

@@ -9,16 +9,18 @@
         
         <!-- *** BANNER *** -->
         <nav class="navbar navbar-light bg-light">
-            <div class="text-center">
+            <div class="mx-auto" style="width: 200px;">
                 <a class="navbar-brand font-weight-bold" href="#">Question 2</a>
             </div>
         </nav>
 
         <!-- *** QUESTION *** -->
-        <p>Select the cosine theorem formula.</p>
-        
+        <div class="form-row mx-auto p-3" style="width:400px;"
+            <p>Select the cosine theorem formula.</p>
+        </div>
+
         <!-- *** FIRST OPTION ROW *** -->
-        <div class="form-row">
+        <div class="form-row mx-auto my-3" style="width:700px;">
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="options" id="option1" value="option1">
                 <label class="form-check-label" for="option1">
@@ -82,94 +84,96 @@
                 </label>
             </div>
         </div>
+    </div>
 
-        <!-- *** SECOND OPTION ROW *** -->
-        <div class="form-row">
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="options" id="option3" value="option3">
-                <label class="form-check-label" for="option3">
-                    <math>
+    <!-- *** SECOND OPTION ROW *** -->
+    <div class="form-row mx-auto my-3" style="width:700px;">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="options" id="option3" value="option3">
+            <label class="form-check-label" for="option3">
+                <math>
+                    <mrow>
+                        <mi>sin</mi>
+                        <mi>&alpha;</mi>
+                        <mo>+</mo>
+                        <mi>sin</mi>
+                        <mi>&beta;</mi>
+                        <mo>=</mo>
                         <mrow>
+                            <mn>2</mn>
                             <mi>sin</mi>
-                            <mi>&alpha;</mi>
-                            <mo>+</mo>
-                            <mi>sin</mi>
-                            <mi>&beta;</mi>
-                            <mo>=</mo>
-                            <mrow>
+                            <mo>(</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>&alpha;</mi>
+                                    <mo>+</mo>
+                                    <mi>&beta;</mi>
+                                </mrow>
                                 <mn>2</mn>
-                                <mi>sin</mi>
-                                <mo>(</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mi>&alpha;</mi>
-                                        <mo>+</mo>
-                                        <mi>&beta;</mi>
-                                    </mrow>
-                                    <mn>2</mn>
-                                </mfrac>
-                                <mo>)</mo>
-                                <mi>cos</mi>
-                                <mo>(</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mi>&alpha;</mi>
-                                        <mo>-</mo>
-                                        <mi>&beta;</mi>
-                                    </mrow>
-                                    <mn>2</mn>
-                                </mfrac>
-                                <mo>)</mo>
-                            </mrow>
-                        </mrow>
-                    </math>
-                </label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="options" id="option4" value="option4">
-                <label class="form-check-label" for="option4">
-                    <math>
-                        <mrow>
-                            <mi>sin</mi>
-                            <mi>&alpha;</mi>
-                            <mo>-</mo>
-                            <mi>sin</mi>
-                            <mi>&beta;</mi>
-                            <mo>=</mo>
-                            <mrow>
+                            </mfrac>
+                            <mo>)</mo>
+                            <mi>cos</mi>
+                            <mo>(</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>&alpha;</mi>
+                                    <mo>-</mo>
+                                    <mi>&beta;</mi>
+                                </mrow>
                                 <mn>2</mn>
-                                <mi>cos</mi>
-                                <mo>(</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mi>&alpha;</mi>
-                                        <mo>+</mo>
-                                        <mi>&beta;</mi>
-                                    </mrow>
-                                    <mn>2</mn>
-                                </mfrac>
-                                <mo>)</mo>
-                                <mi>sin</mi>
-                                <mo>(</mo>
-                                <mfrac>
-                                    <mrow>
-                                        <mi>&alpha;</mi>
-                                        <mo>-</mo>
-                                        <mi>&beta;</mi>
-                                    </mrow>
-                                    <mn>2</mn>
-                                </mfrac>
-                                <mo>)</mo>
-                            </mrow>
+                            </mfrac>
+                            <mo>)</mo>
                         </mrow>
-                    </math>
-                </label>
-            </div>
+                    </mrow>
+                </math>
+            </label>
         </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="options" id="option4" value="option4">
+            <label class="form-check-label" for="option4">
+                <math>
+                    <mrow>
+                        <mi>sin</mi>
+                        <mi>&alpha;</mi>
+                        <mo>-</mo>
+                        <mi>sin</mi>
+                        <mi>&beta;</mi>
+                        <mo>=</mo>
+                        <mrow>
+                            <mn>2</mn>
+                            <mi>cos</mi>
+                            <mo>(</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>&alpha;</mi>
+                                    <mo>+</mo>
+                                    <mi>&beta;</mi>
+                                </mrow>
+                                <mn>2</mn>
+                            </mfrac>
+                            <mo>)</mo>
+                            <mi>sin</mi>
+                            <mo>(</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>&alpha;</mi>
+                                    <mo>-</mo>
+                                    <mi>&beta;</mi>
+                                </mrow>
+                                <mn>2</mn>
+                            </mfrac>
+                            <mo>)</mo>
+                        </mrow>
+                    </mrow>
+                </math>
+            </label>
+        </div>
+    </div>
 
-        <!-- *** BUTTONS *** -->
-        <button type="button" class="btn btn-outline-primary">Submit & Next Question</button>
-        <button type="button" class="btn btn-outline-danger">Cancel & Clear Selection</button>
-
+    <!-- *** BUTTONS *** -->
+    <div class="form-row mx-auto p-3" style="width:450px;">
+        <a href="english_sco.html" class="btn btn-outline-primary mx-3 p-2">Next Question</a>
+        <a href="math_question.html" class="btn btn-outline-danger mx-3 p-2">Previous Question</a>
+    </div>
     </body>
 </html>

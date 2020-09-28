@@ -8,36 +8,44 @@
         
         <!-- *** BANNER *** -->
         <nav class="navbar navbar-light bg-light">
-            <div class="text-center">
+            <div class="mx-auto" style="width: 200px;">
                 <a class="navbar-brand font-weight-bold" href="#">Score Card</a>
             </div>
         </nav>
 
-        <!-- *** OVERALL SUMMARY *** -->
-        <p>Questions Answered:</p>
-        <p>Questions Correct:</p>
-        <br><br>
-
-        <!-- *** SECTION SUMMARY *** -->
-        <div class="bd-example">
-
-            <details open="">
-                <summary>Advanced Algebra</summary>
-                <p> score details</p>
-            </details>
-            
-            <details open="">
-                <summary>English</summary>
-                <p> score details</p>
-            </details>
-            
-            <details open="">
-                <summary>Critical Thinking (Video)</summary>
-                <p> score details</p>
-            </details>
+        <div class="p-4">
+            <div class="p-4 m-auto border border-primary rounded-lg" style="width:300px;">
+                <div class="py-2 m-auto">
+                    <!-- *** OVERALL SUMMARY *** -->
+                    <p>Questions Answered:</p>
+                    <p>Questions Correct:</p>
+                </div>
+                
+                <!-- *** SECTION SUMMARY *** -->
+                <div class="bd-example">
+                    
+                    <details open="">
+                        <summary>Advanced Algebra</summary>
+                        <p> score details</p>
+                    </details>
+                    
+                    <details open="">
+                        <summary>English</summary>
+                        <p> score details</p>
+                    </details>
+                    
+                    <details open="">
+                        <summary>Critical Thinking (Video)</summary>
+                        <p> score details</p>
+                    </details>
+                </div>
+                
+                <!-- *** BUTTONS *** -->
+                <div class="m-auto pt-2">
+                    <a href="login.html" class="btn btn-outline-primary my-3" style="width:250px;">Finish</a>
+                </div>
+                    
+            </div>
         </div>
-
-        <!-- *** BUTTONS *** -->
-        <button type="button" class="btn btn-outline-primary">Exit</button>
     </body>
 </html>

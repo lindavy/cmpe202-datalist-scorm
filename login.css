@@ -1,21 +1,25 @@
 .top-header {
-    height: 60px;
-    background-color: #D6D4D5;
-    text-align: center;
-    font-weight: bold;
-    position: relative;
+    padding-left: 470px;  
 }
 
 .center p {
     text-align: center;
-    /* -ms-transform: translate(-50%, -50%); */
-    /* transform: translate(-50%, -50%); */
 }
 
 .login-main-form {
-    height: 240px;
-    text-align: center;
-    top: 35%;
-    margin: auto; 
-    padding: 80px 300px;
+    padding: 7rem 35rem;
+    margin-right: 0;
+    margin-left: 0; 
+    margin-bottom: 1rem;
+    border-width: 3rem;
+}
+
+.create-account-link {
+    padding: 1rem; 
+    margin-bottom: 0;
+    margin-left: 20rem; 
+}
+
+.login-button {
+    margin-left: 26rem; 
 }

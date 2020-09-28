@@ -9,25 +9,42 @@
 
         <!-- *** BANNER *** -->
         <nav class="navbar navbar-light bg-light">
-            <div class="text-center">
+            <div class="mx-auto" style="width: 200px;">
                 <a class="navbar-brand font-weight-bold" href="#">Question 3</a>
             </div>
         </nav>
 
         <!-- *** QUESTION *** -->
-        <p>
-            As per the latest Twitter news, complete te article snippet given by selecting appropriate choices for the blanks.
-        </p>
+        <div class="form-row mx-auto my-3" style="width:700px;">
+            <p>As per the latest Twitter news, complete the article snippet given by selecting appropriate choices for the blanks.</p>
 
-        <p>
-            Twitter wants more cash. The company announced two $______ million debt offerings in a filing today, each with a potential
-            $100 increse provided that the sales are oversubscribed. Assuming full tip, including the $100 million boosters _______
-            will raise up to $1.5 billion with the two offerings.
-        </p>
+            <br>
+            <p>
+                Twitter wants more cash. The company announced two
+                <select id="select">
+                    <option value="">$______</option>
+                    <option value="opt1">$1,000,000</option>
+                    <option value="opt2">$1,500,000</option>
+                    <option value="opt3">$2,000,000</option>
+                    <option value="opt4">$3,100,000</option>
+                </select>
+                million debt offerings in a filing today, each with a potential
+                $100 increase provided that the sales are oversubscribed. Assuming full tip, including the $100  
+                <select id="select">
+                    <option value="">______</option>
+                    <option value="opt1">hundred</option>
+                    <option value="opt2">thousand</option>
+                    <option value="opt3">million</option>
+                    <option value="opt4">billion</option>
+                </select>
+                boosters, Twitter will raise up to $1.5 billion with the two offerings.
+            </p>
 
-        
-        <!-- *** BUTTONS *** -->
-        <button type="button" class="btn btn-outline-primary">Submit & Next Question</button>
-        <button type="button" class="btn btn-outline-danger">Cancel & Clear Selection</button>
+            <!-- *** BUTTONS *** -->
+            <div class="m-auto p-3">
+                <a href="audio_video_sco.html" class="btn btn-outline-primary">Next Question</a>
+                <a href="cosine.html" class="btn btn-outline-danger">Previous Question</a>
+            </div>
+        </div>
     </body>
 </html>

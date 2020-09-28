@@ -8,46 +8,54 @@
         
         <!-- *** BANNER *** -->
         <nav class="navbar navbar-light bg-light">
-            <div class="text-center">
+            <div class="mx-auto" style="width: 200px;">
                 <a class="navbar-brand font-weight-bold" href="#">Survey</a>
             </div>
         </nav>
 
-        <!-- *** QUESTION *** -->
-        <p>How was your experience at the testing center?</p>
-
-        <!-- *** COMMENT BOX *** -->
-        <p>
-            <label for="commentarea">Comments</label>
-            <textarea id="commentarea" rows="3"></textarea>
-        </p>
-        <br>
-
-        <!-- *** SELECT MENU *** -->
-        <p>Select your test center.</p>
-        <select class="custom-select">
-            <option selected>City</option>
-            <option value="1">Milpitas</option>
-            <option value="2">San Jose</option>
-            <option value="3">Fremont</option>
-            <option value="4">Palo Alto</option>
-            <option value="5">Sunnyvale</option>
-            <option value="6">Redwood City</option>
-          </select>
-          <br>
-          <br>
-          <select class="custom-select">
-            <option selected>Room Number</option>
-            <option value="1">Room 41A</option>
-            <option value="2">Room 41B</option>
-            <option value="3">Room 41C</option>
-            <option value="3">Room 42A</option>
-            <option value="3">Room 42B</option>
-            <option value="3">Room 42C</option>
-          </select>
-
-        <br><br>
-          <!-- *** BUTTONS *** -->
-          <button type="button" class="btn btn-outline-info">Submit Survey</button>
-          <button type="button" class="btn btn-outline-dark">Skip Survey</button>
+        <div class="p-4 m-auto" style="width:900px;">
+            
+            <!-- *** QUESTION *** -->
+            <p>How was your experience at the testing center? Help us improve testers' experience by filling out these questions.</p>
+            
+            <!-- *** COMMENT BOX *** -->
+            <p class="pt-3 mt-3">
+                <label for="commentarea">Comments</label>
+                <textarea id="commentarea" rows="3"></textarea>
+            </p>
+            
+            <!-- *** SELECT MENU *** -->
+            <p>Select your test center.</p>
+            <div class="my-3">
+                <select class="custom-select">
+                    <option selected>City</option>
+                    <option value="1">Milpitas</option>
+                    <option value="2">San Jose</option>
+                    <option value="3">Fremont</option>
+                    <option value="4">Palo Alto</option>
+                    <option value="5">Sunnyvale</option>
+                    <option value="6">Redwood City</option>
+                </select>
+            </div>
+                
+            <div class="my-3">
+                <select class="custom-select">
+                    <option selected>Room Number</option>
+                    <option value="1">Room 41A</option>
+                    <option value="2">Room 41B</option>
+                    <option value="3">Room 41C</option>
+                    <option value="4">Room 42A</option>
+                    <option value="5">Room 42B</option>
+                    <option value="6">Room 42C</option>
+                </select>
+            </div>
+        
+            <div class="py-3 my-3">
+                <p>Thank you for your feedback! &#128522;</p>
+                <!-- *** BUTTONS *** -->
+                <a href="summary.html" class="btn btn-outline-info">Submit Survey</a>
+                <a href="summary.html" class="btn btn-outline-dark">Skip Survey</a>
+            </div>
+        </div>
     </body>
+</html>
