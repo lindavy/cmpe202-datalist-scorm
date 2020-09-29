@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>User Login</title>
+        <!-- <script src = "calculateScore.js"></script> -->
     </head>
     <body>
         <!-- HEADER -->
@@ -43,6 +44,22 @@
                 <div class="login-button">
                     <a href="math_question.html" class="btn btn-primary">Login</a>
                 </div>
+                <script>
+                    localStorage.clear(); 
+                    console.log("cleared local storage");
+                    // localStorage.setItem("score", 0);
+
+                    localStorage.setItem("score", JSON.stringify(0)); 
+
+                    var scoreSheet = {
+                        math_question: null,
+                        cosine: null, 
+                        english: null, 
+                        audio_video: null
+                    }
+                    localStorage.setItem("scoreSheet", JSON.stringify(scoreSheet)); 
+                    console.log("created score sheet"); 
+                </script>
             </form>
         </div>
     </body>

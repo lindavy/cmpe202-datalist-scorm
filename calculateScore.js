@@ -1,29 +1,35 @@
 // quiz results
 var math_question = "option1"; 
 var cosine = "option2"; 
-var english_sco = ["opt1", "opt3"]; 
+var english_sco = ["option1", "option7"]; 
 var audio_video = "option4"; 
-let score = 0;
 var questions_answered = 0; 
 var total_questions = 4; 
 
 console.log("from js script!!")
 
-function viewScore()
-{
-    console.log("your score is " + sessionStorage.getItem("score"));
-}
+function markResults(answer, question)
+{ 
+    if (answer)
+    {
+        // mark result
+        var scoreSheet = JSON.parse(localStorage.getItem('scoreSheet')); 
+        scoreSheet[question] = true; 
+        localStorage.setItem("scoreSheet", JSON.stringify(scoreSheet)); 
+        // console.log(question, " is marked correct!"); 
+        console.log(scoreSheet); 
 
-function tallyScore(answer)
-{
-    if (answer == math_question)
-    {
+        // tally score by typecasting to Integer
+        // var score = localStorage.getItem("score"); 
+        // score = parseInt(score) + 1;
+        // localStorage.setItem("score", score);  
+        // alert("your new score is " + score); 
+
+        // tally score by using JSON
+        var score = JSON.parse(localStorage.getItem("score"));
         score += 1; 
-        questions_answered += 1;
-        sessionStorage.setItem("score", score);
+        localStorage.setItem("score", JSON.stringify(score)); 
     }
-    else
-    {
-        console.log("question 1 is wrong!!")
-    }
-}
+    alert("your score is " + JSON.parse(localStorage.getItem("score"))); 
+    
+} 

@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Class Quiz: English</title>
+        <script src="calculateScore.js"></script>
     </head>
     <body>
         <!-- *** STYLESHEETS *** -->
@@ -22,30 +23,53 @@
             <br>
             <p>
                 Twitter wants more cash. The company announced two
-                <select id="select">
-                    <option value="">$______</option>
-                    <option value="opt1">$1,000,000</option>
-                    <option value="opt2">$1,500,000</option>
-                    <option value="opt3">$2,000,000</option>
-                    <option value="opt4">$3,100,000</option>
+                <select id="select1">
+                    <option value="answer1">$______</option>
+                    <option value="option1">$1,000,000</option>
+                    <option value="option2">$1,500,000</option>
+                    <option value="option3">$2,000,000</option>
+                    <option value="option4">$3,100,000</option>
                 </select>
                 million debt offerings in a filing today, each with a potential
                 $100 increase provided that the sales are oversubscribed. Assuming full tip, including the $100  
-                <select id="select">
-                    <option value="">______</option>
-                    <option value="opt1">hundred</option>
-                    <option value="opt2">thousand</option>
-                    <option value="opt3">million</option>
-                    <option value="opt4">billion</option>
+                <select id="select2">
+                    <option value="answer2">______</option>
+                    <option value="option5">hundred</option>
+                    <option value="option6">thousand</option>
+                    <option value="option7">million</option>
+                    <option value="option8">billion</option>
                 </select>
                 boosters, Twitter will raise up to $1.5 billion with the two offerings.
             </p>
 
             <!-- *** BUTTONS *** -->
             <div class="m-auto p-3">
-                <a href="audio_video_sco.html" class="btn btn-outline-primary">Next Question</a>
+                <a href="audio_video_sco.html" class="btn btn-outline-primary" onclick="markQuestion()">Next Question</a>
                 <a href="cosine.html" class="btn btn-outline-danger">Previous Question</a>
             </div>
+
+            <script>
+                function markQuestion()
+                {
+                    // check first answer
+                    var answer1 = document.getElementById("select1"); 
+                    var answer2 = document.getElementById("select2");
+
+                    if (answer1.options[answer1.selectedIndex].value == "answer1" && answer2.options[answer2.selectedIndex].value == "answer2")
+                    {
+                        answer = null; 
+                    }
+                    if (answer1.options[answer1.selectedIndex].value == "option1" && answer2.options[answer2.selectedIndex].value == "option7")
+                    {
+                        answer = true;
+                    }
+                    else
+                    {
+                        answer = false; 
+                    }
+                    markResults(answer, "english_sco");
+                }
+            </script>
         </div>
     </body>
 </html>

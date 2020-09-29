@@ -174,40 +174,27 @@
 
     <!-- *** BUTTONS *** -->
     <div class="form-row m-auto p-3"" style="width:450px;"">
-        <a href="english_sco.html" class="btn btn-outline-primary mr-1">Next Question</a>
+        <a href="english_sco.html" class="btn btn-outline-primary mr-1" onclick="markQuestion()">Next Question</a>
         <a href="math_question.html" class="btn btn-outline-danger">Previous Question</a>
     </div>
 
     <script>
-        let answer = null;
-        viewScore();
+        var answer = null;
+        document.getElementById("option1").addEventListener("click", function() {
+            answer = false; 
+        })
+        document.getElementById("option2").addEventListener("click", function() {
+            answer = true; 
+        })
+        document.getElementById("option3").addEventListener("click", function() {
+            answer = false; 
+        })
+        document.getElementById("option4").addEventListener("click", function() {
+            answer = false; 
+        })
         function markQuestion()
         {
-            if (document.getElementById('option1').checked)
-            {
-                console.log('option1 checked');
-                answer = 'option1';
-            }
-            else if (document.getElementById('option2').checked)
-            {
-                console.log('option2 checked');
-                answer = 'option2'; 
-            }
-            else if (document.getElementById('option3').checked)
-            {
-                console.log('option3 checked');
-                answer = 'option3';
-            }
-            else if (document.getElementById('option4').checked)
-            {
-                console.log('option4 checked');
-                answer = 'option4';
-            }
-            else
-            {
-                answer = ""; 
-            }
-            tallyScore(answer);
+            markResults(answer, "cosine");
         }
     </script>
     </body>
