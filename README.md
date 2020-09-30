@@ -13,3 +13,6 @@ The goal of the assignment is to create Shareable Content Objects (SCOs) using H
   * Video Tag
   * Datalist Tag
   * Summary Tag
+
+## Run Webpage
+Open *login.html* in the Firefox browser. MathML is not supported on Google Chrome. 

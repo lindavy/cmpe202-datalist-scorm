@@ -44,8 +44,8 @@
 
             <!-- *** BUTTONS *** -->
             <div class="m-auto p-3">
-                <a href="audio_video_sco.html" class="btn btn-outline-primary" onclick="markQuestion()">Next Question</a>
                 <a href="cosine.html" class="btn btn-outline-danger">Previous Question</a>
+                <a href="audio_video_sco.html" class="btn btn-outline-primary" onclick="markQuestion()">Next Question</a>
             </div>
 
             <script>
@@ -59,7 +59,7 @@
                     {
                         answer = null; 
                     }
-                    if (answer1.options[answer1.selectedIndex].value == "option1" && answer2.options[answer2.selectedIndex].value == "option7")
+                    else if (answer1.options[answer1.selectedIndex].value == "option1" && answer2.options[answer2.selectedIndex].value == "option7")
                     {
                         answer = true;
                     }

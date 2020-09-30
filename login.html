@@ -47,17 +47,20 @@
                 <script>
                     localStorage.clear(); 
                     console.log("cleared local storage");
-                    // localStorage.setItem("score", 0);
-
                     localStorage.setItem("score", JSON.stringify(0)); 
 
                     var scoreSheet = {
                         math_question: null,
                         cosine: null, 
-                        english: null, 
+                        english_sco: null, 
                         audio_video: null
                     }
+                    var questionsAnswered = 4; 
+                    var questionsCorrect = 0;
+
                     localStorage.setItem("scoreSheet", JSON.stringify(scoreSheet)); 
+                    localStorage.setItem("questionsAnswered", JSON.stringify(questionsAnswered)); 
+                    localStorage.setItem("questionsCorrect", JSON.stringify(questionsCorrect)); 
                     console.log("created score sheet"); 
                 </script>
             </form>

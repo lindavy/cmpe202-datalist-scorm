@@ -1,35 +1,59 @@
-// quiz results
-var math_question = "option1"; 
-var cosine = "option2"; 
-var english_sco = ["option1", "option7"]; 
-var audio_video = "option4"; 
-var questions_answered = 0; 
-var total_questions = 4; 
-
-console.log("from js script!!")
+var ss = JSON.parse(localStorage.getItem("scoreSheet"));
+console.log("score sheet: ", ss);
 
 function markResults(answer, question)
 { 
-    if (answer)
+    console.log("marking result...");
+    var scoreSheet = JSON.parse(localStorage.getItem('scoreSheet')); 
+    if (answer == null)
+    {
+        scoreSheet[question] = "skipped"; 
+    }
+    else
     {
         // mark result
-        var scoreSheet = JSON.parse(localStorage.getItem('scoreSheet')); 
-        scoreSheet[question] = true; 
+        if (answer)
+        {
+            scoreSheet[question] = "correct"; 
+        }
+        else
+        {
+            scoreSheet[question] = "incorrect"; 
+        }
         localStorage.setItem("scoreSheet", JSON.stringify(scoreSheet)); 
-        // console.log(question, " is marked correct!"); 
-        console.log(scoreSheet); 
 
-        // tally score by typecasting to Integer
-        // var score = localStorage.getItem("score"); 
-        // score = parseInt(score) + 1;
-        // localStorage.setItem("score", score);  
-        // alert("your new score is " + score); 
-
-        // tally score by using JSON
-        var score = JSON.parse(localStorage.getItem("score"));
-        score += 1; 
-        localStorage.setItem("score", JSON.stringify(score)); 
-    }
-    alert("your score is " + JSON.parse(localStorage.getItem("score"))); 
+    } 
     
 } 
+
+function questionsCorrectAnswered()
+{
+    console.log("calculating score...");
+    var questionsCorrect = JSON.parse(localStorage.getItem("questionsCorrect"));
+    var questionsAnswered = JSON.parse(localStorage.getItem("questionsAnswered")); 
+    var scoreSheet = JSON.parse(localStorage.getItem("scoreSheet")); 
+    
+    for (var subject of Object.keys(scoreSheet))
+    {
+        console.log(subject);
+        if (scoreSheet[subject] == null)
+        {
+            questionsAnswered -= 1;
+        }
+        // must explicitly check if it is true
+        else if (scoreSheet[subject] == "correct")
+        {
+            questionsCorrect += 1;
+        }
+    }
+
+    // store into JSON file
+    localStorage.setItem("questionsCorrect", JSON.stringify({"questionsCorrect": questionsCorrect}));
+    localStorage.setItem("questionsAnswered", JSON.stringify({"questionsAnswered": questionsAnswered}));
+    console.log("questions answered: ", JSON.parse(localStorage.getItem("questionsAnswered")));
+}
+
+function getScore(result)
+{
+    return JSON.parse(localStorage.getItem(result))[result];
+}

@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Class Quiz: Survey</title>
+        <script src="calculateScore.js"> </script>
     </head>
     <body>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -54,9 +55,12 @@
             <div class="py-3 my-3">
                 <p>Thank you for your feedback! &#128522;</p>
                 <!-- *** BUTTONS *** -->
-                <a href="summary.html" class="btn btn-outline-info">Submit Survey</a>
                 <a href="summary.html" class="btn btn-outline-dark">Skip Survey</a>
+                <a href="summary.html" class="btn btn-outline-info">Submit Survey</a>
             </div>
+            <script>
+                questionsCorrectAnswered();
+            </script>
         </div>
     </body>
 </html>
