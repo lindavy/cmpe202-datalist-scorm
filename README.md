@@ -16,3 +16,9 @@ The goal of the assignment is to create Shareable Content Objects (SCOs) using H
 
 ## Run Webpage
 Open *login.html* in the Firefox browser. MathML is not supported on Google Chrome. 
+
+## Demo Part I
+![](datalist-scorm-part1.gif)
+
+## Demo Part II
+![](datalist-scorm-part2.gif)
